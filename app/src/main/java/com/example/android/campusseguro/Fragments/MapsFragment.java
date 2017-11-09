@@ -23,8 +23,8 @@ public class MapsFragment extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        onMapReady(mMap);
     }
-
 
     /**
      * Manipulates the map once available.
@@ -39,9 +39,9 @@ public class MapsFragment extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng UFRN = new LatLng(-5.836302, -35.209755);
+        mMap.addMarker(new MarkerOptions().position(UFRN).title("Marker in Sydney"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(UFRN));
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(16.0f));
     }
 }

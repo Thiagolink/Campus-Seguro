@@ -17,16 +17,10 @@ import android.view.MenuItem;
 
 import com.example.android.campusseguro.Fragments.Configuracao;
 import com.example.android.campusseguro.Fragments.Estatistica;
-import com.example.android.campusseguro.Fragments.Mapa;
-import com.example.android.campusseguro.Fragments.MapsFragment;
 import com.example.android.campusseguro.R;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-
-import java.io.FileDescriptor;
-import java.io.PrintWriter;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback {
@@ -64,7 +58,7 @@ public class MainActivity extends AppCompatActivity
        // FragmentManager fragmentManager = getFragmentManager();
       //  fragmentManager.beginTransaction().replace(R.id.Fragment, new Configuracao()).commit();
 
-        sMapFragment.getMapAsync(this);
+
     }
 
     @Override
@@ -119,6 +113,7 @@ public class MainActivity extends AppCompatActivity
                 sFm.beginTransaction().add(R.id.map, sMapFragment).commit();
             else
                 sFm.beginTransaction().show(sMapFragment).commit();
+
 
             // Handle the camera action
         } else if (id == R.id.nav_estatisticas) {
