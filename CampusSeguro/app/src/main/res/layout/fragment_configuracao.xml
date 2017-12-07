@@ -2,12 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.campusseguro.Fragments.Configuracao">
+    tools:context="ufrn.campusseguro.Fragment.fragmentConfiguracao">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Configuracao" />
+        android:text="Configuração"
+        android:textAlignment="center"
+        android:textSize="90sp"
+        android:textStyle="bold" />
 
 </FrameLayout>

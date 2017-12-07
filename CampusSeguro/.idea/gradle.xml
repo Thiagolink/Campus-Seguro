@@ -7,8 +7,12 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
+            <option value="$PROJECT_DIR$/.." />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/../sinfo.ufrn.br" />
+            <option value="$PROJECT_DIR$/../sinfo.ufrn.br/JApi" />
+            <option value="$PROJECT_DIR$/../sinfo.ufrn.br/JApi/1.0.0" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
